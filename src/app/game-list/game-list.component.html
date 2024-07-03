@@ -1,0 +1,10 @@
+<div class="container" [appBgInputColor]="bgColor">
+    <mat-form-field class="fullInput">
+        <mat-label>CSS color</mat-label>
+        <input matInput [appBgInputColor]="bgColor" [(ngModel)]="bgColor">
+    </mat-form-field>
+    <div fxLayout="row wrap" fxLayoutAlign="space-around">
+            <app-game class="carta" fxFlex="23" *ngFor="let game of gameList" [game]="game"></app-game>
+        
+    </div>
+</div>
